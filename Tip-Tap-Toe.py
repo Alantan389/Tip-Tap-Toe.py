@@ -12,7 +12,7 @@ def display_board(current_positions):
     ---------
     {bottom left} | {bottom center} | {bottom right}
     """.format(**current_positions)
-    print board
+    print (board)
 
 def user_move(current_positions, current_player):
     possible_moves = []
@@ -73,8 +73,11 @@ def play_game():
         result = is_game_over(current_positions)
         if result:
             display_board(current_positions)
-            print "GAME OVER"
-            print "Result: ", result
-
+            
+            print ("GAME OVER")
+            
+            print("Result: ", result)
+            
+           
 
 play_game()
